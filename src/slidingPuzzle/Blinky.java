@@ -9,8 +9,8 @@ import javax.swing.Timer;
 
 public class Blinky extends JButton {
 
-	private static final long serialVersionUID = 5379263748310201606L;
-	private Timer timer;
+    private static final long serialVersionUID = 5379263748310201606L;
+    private Timer timer;
     private JButton bouton;
     private Color tempcolor;
 
@@ -28,13 +28,13 @@ public class Blinky extends JButton {
 
     public class BlinkingListener implements ActionListener {
 
-    	public void actionPerformed(ActionEvent evt) {
-    		// Color inversion
+        public void actionPerformed(ActionEvent evt) {
+            // Color inversion
             if (bouton.getForeground().equals(tempcolor))
               setForeground (Color.RED);
             else
               bouton.setForeground(tempcolor);
-    	}
+        }
 
     }
 

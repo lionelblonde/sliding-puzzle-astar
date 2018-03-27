@@ -18,7 +18,7 @@ public class State {
     public State(byte[] cells) {
         allCells = new byte[cells.length];
         for (int i = 0; i < allCells.length; i++) {
-        	allCells[i] = cells[i];
+            allCells[i] = cells[i];
         }
         dimension = (int) Math.sqrt(cells.length);
     }
